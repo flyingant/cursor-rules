@@ -1,0 +1,99 @@
+# Cursor AI Assistant Rules
+
+## Core Development Principles
+- **Code Quality**: Write clean, readable, and maintainable code with proper error handling
+- **Consistency**: Follow established patterns and conventions within the project
+- **Documentation**: Add comments for complex logic, not obvious implementations
+- **Testing**: Write tests for new features and bug fixes when appropriate
+- **Security**: Never hardcode sensitive information (API keys, passwords, etc.)
+- **Performance**: Consider performance implications for user-facing features
+
+## Development Workflow
+- **Planning**: For complex tasks (3+ steps), create a todo list and confirm approach
+- **Implementation**: Make incremental changes and test as you go
+- **Testing**: Ask for confirmation before running tests on existing code
+- **Dependencies**: Check existing packages before suggesting new ones
+- **Git**: Never push directly; ask for permission before committing
+- **Cleanup**: Remove debug files and unused code after resolving issues
+
+## Code Style & Standards
+### General
+- Use descriptive, meaningful variable and function names
+- Follow language-specific style guides (PEP 8 for Python, Airbnb for JS)
+- Keep functions focused on single responsibilities
+- Use consistent indentation and formatting
+- Add meaningful commit messages
+
+### Python
+- Use type hints for function parameters and return values
+- Follow PEP 8 naming conventions (snake_case for variables/functions)
+- Handle exceptions with specific exception types
+- Use context managers for resource management
+- Avoid global variables; use class attributes or dependency injection
+
+### JavaScript/TypeScript
+- Prefer modern ES6+ syntax (const/let, arrow functions, template literals)
+- Use async/await for asynchronous operations
+- Implement proper error handling with try-catch blocks
+- Follow consistent naming (camelCase for variables/functions)
+- Use TypeScript interfaces for complex data structures
+
+### HTML/CSS
+- Write semantic, accessible HTML
+- Use CSS custom properties for consistent theming
+- Ensure responsive design with mobile-first approach
+- Follow BEM or similar CSS naming methodology
+- Optimize images and use appropriate formats
+
+## Web Development
+- **Styling Framework**: Use Wireframe CSS for all web development styling by default
+- **CSS Framework**: If a CSS framework is required, use Tailwind CSS exclusively
+- **Responsive Design**: Ensure all layouts are responsive by default, supporting mobile, tablet, and desktop viewports
+- **Component Reuse**: For existing projects, reuse existing styling and components from other pages to maintain consistency
+- **Mobile-First**: Prioritize mobile experience and progressively enhance for larger screens
+
+## File-Specific Rules
+- **Test Files**: In files matching `*.test.js` or `*.spec.js`, include at least one test case for edge conditions
+- **README Files**: In `README.md`, ensure installation instructions are up-to-date and include dependencies
+- **Configuration Files**: When editing config files (package.json, tsconfig.json, etc.), verify that changes don't break existing functionality
+- **Documentation Files**: For `.md` files, maintain consistent formatting and check for broken links
+
+## Modern Development Practices
+- **Version Control**: Use descriptive commit messages and branch naming
+- **Code Reviews**: Consider edge cases and potential issues
+- **Security**: Validate user inputs and sanitize data
+- **Performance**: Optimize bundle size and loading times
+- **Accessibility**: Include alt text, proper heading hierarchy, keyboard navigation
+- **Testing**: Write unit tests for critical functionality
+- **Documentation**: Keep API documentation current and accurate
+
+## File and Project Management
+- **New Files**: Create appropriate file structure following project conventions
+- **Existing Files**: Modify existing files rather than creating duplicates
+- **Configuration**: Update config files (package.json, tsconfig, etc.) as needed
+- **Dependencies**: Use latest stable versions unless compatibility requires older versions
+- **Build Tools**: Configure webpack/vite/etc. for optimal development and production builds
+
+## Error Handling & Debugging
+- **Logging**: Add appropriate logging for debugging and monitoring
+- **Error Messages**: Provide clear, actionable error messages
+- **Fallbacks**: Implement graceful degradation for failed operations
+- **Validation**: Validate inputs and handle edge cases
+- **Monitoring**: Consider adding error tracking for production issues
+
+## Prohibited Actions
+- Never delete existing files without explicit permission
+- Don't hardcode sensitive configuration or credentials
+- Avoid deprecated libraries or insecure practices
+- Don't modify core system files or configurations
+- Never expose internal APIs or sensitive data
+
+## Communication Guidelines
+- Explain technical decisions and trade-offs
+- Ask clarifying questions when requirements are unclear
+- Provide multiple solutions when appropriate
+- Be proactive about potential issues or improvements
+- Document assumptions and constraints
+
+---
+*These rules ensure consistent, high-quality development practices and should be updated as project needs evolve.*
