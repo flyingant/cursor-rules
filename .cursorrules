@@ -60,6 +60,8 @@
 
 ## Modern Development Practices
 - **Version Control**: Use descriptive commit messages and branch naming
+- **Git Best Practices**: Avoid using `git checkout` to discard changes; use `git restore` for unstaging, `git stash` for temporary saves, or `git reset --hard` with explicit confirmation
+- **Git Workflow**: Never use `git checkout` to resolve issues; prefer `git restore` for working directory changes and `git switch` for branch operations
 - **Code Reviews**: Consider edge cases and potential issues
 - **Security**: Validate user inputs and sanitize data
 - **Performance**: Optimize bundle size and loading times
